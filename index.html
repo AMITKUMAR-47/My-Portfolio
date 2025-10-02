@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Kumar - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Welcome !</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#resume" class="nav-link" id="resume-link">Resume</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Zig-zag: Text LEFT, Image RIGHT -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="profile-section">
+                    <div class="profile-text">
+                        <div class="hero-greeting">Hi I'm</div>
+                        <h1 class="hero-title">Amit Kumar</h1>
+                        <p class="hero-subtitle">Full Stack Developer</p>
+                        <p class="hero-description">I'm a passionate Full Stack Developer with a foundation in frontend and backend technologies. I specialize in building efficient, scalable, and user-friendly web applications.</p>
+                    </div>
+                    <div class="profile-image-container">
+                        <img src="Amit Kumar.png" alt="Amit Kumar" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section - Zig-zag: Title LEFT, Content RIGHT -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-title-section">
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="about-text-section">
+                    <p>I'm a Computer Science Engineering student with working knowledge of Java, HTML, CSS, MongoDB, MySQL, and Excel. I've completed academic projects that helped me understand the basics of software development, web design, and database management.<br>
+                     <br>I'm currently exploring opportunities to apply these skills in real-world settings and improve through practical experience. I value consistent learning and aim to grow steadily in the tech field.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="all">All Skills</button>
+                <button class="tab-btn" data-tab="frontend">Frontend</button>
+                <button class="tab-btn" data-tab="backend">Backend</button>
+                <button class="tab-btn" data-tab="database">Database</button>
+                <button class="tab-btn" data-tab="languages">Languages</button>
+            </div>
+            <div class="skills-grid" id="skills-grid">
+                <!-- Skills will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section - Text Only -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Calculator</h3>
+                        <p class="project-description">A simple web-based calculator that performs basic arithmetic operations with a user-friendly interface.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-cloud-sun"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Weather Web App</h3>
+                        <p class="project-description">A dynamic web-based application built with HTML, CSS, and JavaScript that provides real-time weather information and forecasts.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-user-lock"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">User Authentication System</h3>
+                        <p class="project-description">A secure system that enables users to register, log in, and manage accounts, with all credentials and user data stored in a connected database.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Database</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Todo List</h3>
+                        <p class="project-description">Feature-rich to-do application with CRUD operations, task categories, priority settings, and persistent data storage.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-qrcode"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">QR Code Generator</h3>
+                        <p class="project-description">Dynamic QR code generator with instant previews, multiple data types, download/export functionality, and mobile-first design.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">E-commerce Platform</h3>
+                        <p class="project-description">Full-scale e-commerce website with product management, shopping cart, secure payment integration, and modern scalable architecture.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+            </form>
+            
+            <!-- Smaller Social Media Icons -->
+            <div class="social-media-section">
+                <h3 class="social-title">Connect with me</h3>
+                <div class="social-links-small">
+                    <a href="mailto:amitkumar365460@gmail.com" target="_blank" class="social-link-small">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/amitkumar2408" target="_blank" class="social-link-small">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/AMITKUMAR-47" target="_blank" class="social-link-small">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Modal -->
+    <div id="resume-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Resume - Amit Kumar</h2>
+                <span class="close-btn" id="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="resume-content">
+                    <div class="resume-header">
+                        <h1>AMIT KUMAR A</h1>
+                        <p class="resume-subtitle">COMPUTER SCIENCE ENGINEER</p>
+                        <div class="contact-info">
+                            <span>📞 7092150556</span>
+                            <span>📍 Chennai</span>
+                            <span>✉️ amitkumar365460@gmail.com</span>
+                        </div>
+                         <!-- Resume Download Button -->
+                        <div class="resume-download-section" style="margin-top: 20px;">
+                            <a href="Resume (PBI).pdf" download="Amit_Kumar_Resume.pdf" class="btn btn--primary" id="download-resume-btn">
+                                <i class="fas fa-download"></i> Download Resume
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>Executive Summary</h3>
+                        <p>Computer Science Engineering Graduate with proficient in full-stack development, database Management, teamwork and Excel Skills such as Data Entry & Spreadsheet Formatting. Highly motivated to start a professional career, contribute to innovative projects, and grow with a technology driven organization.</p>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <h4>Bachelor of Engineering in Computer Science (2022-2026)</h4>
+                            <p>Loyola Institute of Technology | Anna University | Palanchur </p>
+                            <p>CGPA: 8.1</p>
+                        </div>
+                        <div class="education-item">
+                            <h4>HSC (12th)</h4>
+                            <p>St.Thresa's Mat.Hr.Sec.School | Chennai (2021-2022)</p>
+                            <p>Marks: 80%</p>
+                        </div>
+                        <div class="education-item">
+                            <h4>SSLC (10th)</h4>
+                            <p>St.Thresa's Mat.Hr.Sec.School | Chennai (2019-2020)</p>
+                            <p>Marks: 73%</p>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>Skills</h3>
+                        <p>• WebDevelopment – HTML, CSS,  JavaScript. 
+                           <br>• Databases - MongoDB, MySQL.  
+                           <br>• Programming Languages - Java.  
+                           <br>• Project & Task Management - GitHub.  
+                           <br>• Tools - MS Excel, MS Power BI, VS Code.</p>
+                        </p>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>Projects</h3>
+                        <div class="project-item">
+                            <h4>Calculator</h4>
+                            <p>A simple web-based calculator that performs basic arithmetic operations with a user-friendly interface.</p>
+                        </div>
+                        <div class="project-item">
+                            <h4>Weather Web App</h4>
+                            <p>A weather web app is a dynamic web-based application built with HTML, CSS, and JavaScript that provides real-time weather information and forecasts.</p>
+                        </div>
+                        <div class="project-item">
+                            <h4>User Authentication System with Database</h4>
+                            <p>A secure system that enables users to register, log in, and manage accounts, with all credentials and user data stored in a connected database.</p>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>Certifications</h3>
+                        <ul>
+                           <li>❖ <b>Full Stack Developer</b> – Simplilearn. Sep 2025</li>                                                                                               
+                           <li>❖ <b>Introduction to DataEngineering and BigData</b> – HCL GUVI. Sept 2025</li>                                                
+                           <li>❖ <b>Web Development with Node.js MongoDB</b> - Infosys Springboard. July 2025</li>                                          
+                           <li>❖ <b>MongoDB Developer's Toolkit: CRUD Mastery</b> – Geeksforgeeks. Aug 2024  </li>                                          
+                           <li>❖ <b>Young Professional Course</b> - TCS iON Career Edge. Aug 2024  </li>                                                                
+             
+                        </ul>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>Languages</h3>
+                        <p>English, Tamil, Hindi</p>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>Qualities</h3>
+                        <p>Time Management, Team Player</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
