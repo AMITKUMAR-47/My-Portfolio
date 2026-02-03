@@ -1122,6 +1122,13 @@ body {
   margin: 0;
 }
 
+/* Python original logo style */
+.fa-python {
+    background: linear-gradient(135deg, #3776AB 50%, #FFD43B 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 /* Original brand colors with glow effects */
 .skill-card[data-skill="HTML"] .skill-icon {
   color: var(--html-color);
