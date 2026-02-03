@@ -7,8 +7,8 @@ const skillsData = {
         {name: "MongoDB", icon: "fa-solid fa-leaf", color: "#47A248"},
         {name: "MySQL", icon: "fa-solid fa-database", color: "#4479A1"},
         // {name: "Node.js", icon: "fa-brands fa-node-js", color: "#339933"},
-        {name: "Java", icon: "fa-brands fa-java", color: "#ED8B00"},
-        // {name: "Python", icon: "fa-brands fa-python", color: "#3776AB"}
+        // {name: "Java", icon: "fa-brands fa-java", color: "#ED8B00"},
+        {name: "Python", icon: "fa-brands fa-python", color: "#3776AB"}
     ],
     frontend: [
         {name: "HTML", icon: "fa-brands fa-html5", color: "#E34F26"},
@@ -24,8 +24,8 @@ const skillsData = {
     ],
     languages: [
         {name: "JavaScript", icon: "fa-brands fa-js", color: "#F7DF1E"},
-        {name: "Java", icon: "fa-brands fa-java", color: "#ED8B00"},
-        // {name: "Python", icon: "fa-brands fa-python", color: "#3776AB"}
+        // {name: "Java", icon: "fa-brands fa-java", color: "#ED8B00"},
+        {name: "Python", icon: "fa-brands fa-python", color: "#3776AB"}
     ]
 };
 
@@ -594,4 +594,6 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+
 
